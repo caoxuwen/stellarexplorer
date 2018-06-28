@@ -256,7 +256,8 @@ ul.navbar-nav .divider-vertical {
 /*************************************************************/
 @media (min-width: 768px) {
   #Search-Container {
-    padding-top: 10px;
+      padding-top: 10px;
+
   }
   #Search-Container input {
     width: 620px !important;

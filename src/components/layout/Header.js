@@ -20,18 +20,20 @@ class Header extends React.Component {
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">
+	    {/*
               <img
                 src={logoImg}
                 className="App-logo"
                 alt={formatMessage({id: 'logo'})}
-              />
-              <span className="brand-text">explorer</span>
+		/>*/}
+              <span className="brand-text">ION explorer</span>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Navbar.Form pullRight>
+
+        {/*<Navbar.Form pullRight>
             <LanguageSelector
               language={this.props.language}
               switcher={this.props.languageSwitcher}
@@ -42,7 +44,7 @@ class Header extends React.Component {
               network={this.props.network}
               switcher={this.props.networkSwitcher}
             />
-          </Navbar.Form>
+          </Navbar.Form>*/}
           <Nav>
             <LinkContainer to="/operations">
               <NavItem>
@@ -60,7 +62,7 @@ class Header extends React.Component {
               </NavItem>
             </LinkContainer>
 
-            <li className="divider-vertical" />
+        {/* <li className="divider-vertical" />
 
             <LinkContainer to="/assets">
               <MenuItem>
@@ -76,7 +78,7 @@ class Header extends React.Component {
               <MenuItem>
                 <FormattedMessage id="exchanges" />
               </MenuItem>
-            </LinkContainer>
+              </LinkContainer> */}
 
             <li className="divider-vertical" />
 
@@ -99,12 +101,13 @@ class Header extends React.Component {
                 <MenuItem>
                   <FormattedMessage id="trades" />
                 </MenuItem>
-              </LinkContainer>
+            </LinkContainer>
+	    {/*
               <LinkContainer to="/pools">
                 <MenuItem>
                   <FormattedMessage id="inflation.pools" />
                 </MenuItem>
-              </LinkContainer>
+		</LinkContainer>*/}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

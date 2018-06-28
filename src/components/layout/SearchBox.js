@@ -166,13 +166,14 @@ class SearchBox extends React.Component {
             <InputGroup.Addon>
               <Glyphicon glyph="search" onClick={this.searchHandler} />
             </InputGroup.Addon>
+	    {/*
             <InputGroup.Addon>
               <Glyphicon
                 className="info-icon"
                 glyph="info-sign"
                 onClick={this.handleClick}
               />
-            </InputGroup.Addon>
+              </InputGroup.Addon>*/}
           </InputGroup>
         </form>
         {this.state.show && (

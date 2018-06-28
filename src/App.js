@@ -50,8 +50,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-json-pretty/src/JSONPretty.1337.css'
 import './App.css'
 
-const HOME_PUBLIC = 'https://steexp.com'
-const HOME_TESTNET = 'https://testnet.steexp.com'
+const HOME_PUBLIC = 'https://explorer.ion.one'
+const HOME_TESTNET = 'https://test-explorer.ion.one'
 
 const storage = storageInit()
 
@@ -59,7 +59,8 @@ addLocaleData([...en, ...ru, ...vi, ...zh])
 
 const initialLanguage =
   storage.getItem('language') || navigator.language || 'en'
-const initialNetwork = storage.getItem('network') || networks.public
+//const initialNetwork = storage.getItem('network') || networks.public
+const initialNetwork = networks.public
 
 const getMessages = locale => {
   switch (locale) {
@@ -92,10 +93,11 @@ class App extends Component {
   setNetwork = (network, href) => {
     console.log(`NETWORK change: ${this.state.network} to ${network}`)
     storage.setItem('network', network)
-    window.location.href = href
+    //window.location.href = href
   }
 
-  // network switcher buttons in the header - public or testnet switch
+    // network switcher buttons in the header - public or testnet switch
+    
   networkSwitcher = selectedNetwork => {
     const newHome =
       selectedNetwork === networks.public ? HOME_PUBLIC : HOME_TESTNET
@@ -161,7 +163,7 @@ class App extends Component {
                 <Route component={Error} />
               </Switch>
             </div>
-            <Footer />
+            {/*<Footer />*/}
           </div>
         </Router>
       </IntlProvider>
