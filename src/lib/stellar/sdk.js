@@ -1,9 +1,9 @@
-import sdk from 'stellar-sdk'
+import sdk from 'ion-sdk'
 import URI from 'urijs'
 
-import {LedgerCallBuilder} from 'stellar-sdk/lib/ledger_call_builder'
-import {OperationCallBuilder} from 'stellar-sdk/lib/operation_call_builder'
-import {TransactionCallBuilder} from 'stellar-sdk/lib/transaction_call_builder'
+import {LedgerCallBuilder} from 'ion-sdk/lib/ledger_call_builder'
+import {OperationCallBuilder} from 'ion-sdk/lib/operation_call_builder'
+import {TransactionCallBuilder} from 'ion-sdk/lib/transaction_call_builder'
 
 /* ----------------------------------------------------------
  *

@@ -7,7 +7,7 @@ import Table from 'react-bootstrap/lib/Table'
 import Tab from 'react-bootstrap/lib/Tab'
 import Tabs from 'react-bootstrap/lib/Tabs'
 import {injectIntl, FormattedMessage} from 'react-intl'
-import {FederationServer, StrKey} from 'stellar-sdk'
+import {FederationServer, StrKey} from 'ion-sdk'
 import has from 'lodash/has'
 
 import knownAccounts from '../data/known_accounts'
@@ -70,7 +70,7 @@ const NameValueTable = ({data, decodeValue = false}) => {
 }
 
 const balanceRow = bal => (
-  <tr key={bal.asset_code ? `${bal.asset_code}-${bal.asset_issuer}` : 'XLM'}>
+  <tr key={bal.asset_code ? `${bal.asset_code}` : 'IONX'}>
     <td>
       <Asset
         type={bal.asset_type}

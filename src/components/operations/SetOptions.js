@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {FormattedMessage} from 'react-intl'
-import {StrKey} from 'stellar-sdk'
+import {StrKey} from 'ion-sdk'
 import AccountLink from '../shared/AccountLink'
 import snakeCase from 'lodash/snakeCase'
 import {isPublicKey, shortHash} from '../../lib/utils'

@@ -122,7 +122,7 @@ class Ledger extends React.Component {
                     {baseInStroops
                       ? stroopsToLumens(baseReserve)
                       : Number(baseReserve)}{' '}
-                    XLM
+                    IONX
                   </DetailRow>
                   <DetailRow label="max.transactions">
                     {maxTxSetSize} per ledger
