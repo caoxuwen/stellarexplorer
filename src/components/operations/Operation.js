@@ -23,6 +23,7 @@ const opTypeComponentMap = {
   change_trust: ChangeTrust,
   create_account: CreateAccount,
   create_passive_offer: Offer,
+  create_margin_offer: Offer,
   inflation: Inflation,
   manage_data: ManageData,
   manage_offer: Offer,
