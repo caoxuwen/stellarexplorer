@@ -60,7 +60,7 @@ addLocaleData([...en, ...ru, ...vi, ...zh])
 const initialLanguage =
   storage.getItem('language') || navigator.language || 'en'
 //const initialNetwork = storage.getItem('network') || networks.public
-const initialNetwork = networks.public
+const initialNetwork = networks.local
 
 const getMessages = locale => {
   switch (locale) {

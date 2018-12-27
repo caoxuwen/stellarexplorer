@@ -5,7 +5,7 @@ import has from 'lodash/has'
 const serverAddresses = {
     //public: 'https://horizon.stellar.org',
       public: 'https://api.ion.one',
-  test: 'https://horizon-testnet.stellar.org',
+  test: 'https://localhost:8000',
   local: 'http://localhost:8000',
 }
 
