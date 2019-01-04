@@ -90,6 +90,7 @@
     "Created Account {account} with balance {balance}",
   "operation.account.merge": "Account merged into {account}",
   "operation.inflation": "Funding run",
+  "operation.liquidation": "Liquidation run",
   "operation.manage.data.remove": "Remove Key {name}",
   "operation.manage.data.set": "Set Key {name}",
   "operation.manage.data.set.to": " to {value}",

@@ -11,6 +11,7 @@ import AllowTrust from './AllowTrust'
 import ChangeTrust from './ChangeTrust'
 import CreateAccount from './CreateAccount'
 import Inflation from './Inflation'
+import Liquidation from './Liquidation'
 import ManageData from './ManageData'
 import Offer from './Offer'
 import PathPayment from './PathPayment'
@@ -24,7 +25,9 @@ const opTypeComponentMap = {
   create_account: CreateAccount,
   create_passive_offer: Offer,
   create_margin_offer: Offer,
+  create_liquidation_offer: Offer,
   inflation: Inflation,
+  liquidation: Liquidation,
   manage_data: ManageData,
   manage_offer: Offer,
   path_payment: PathPayment,
